@@ -1,0 +1,21 @@
+:Root {
+    font-size: 32px;
+}
+
+body {
+    background-color: #6a0303;
+}
+
+header { 
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    color: seashell;
+    font-family: 'Long Cang', cursive;
+}
+
+#main-image {
+    border-radius: 10px;
+    width: 639px;
+    height: 270px;
+}
