@@ -1,6 +1,5 @@
 :Root {
   font-size: 32px;
-
 }
 
 html {
@@ -25,4 +24,13 @@ header {
   border-radius: 10px;
   width: 639px;
   height: 270px;
+}
+
+h4 {
+  font-size: .6rem;
+}
+
+.review-header {
+  font-family: Consolas, 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
 }
