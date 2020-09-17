@@ -7,7 +7,7 @@
 
 @media (max-width: 650px) {
   :Root {
-    font-size: 12px;
+    font-size: 12.5px;
     color: seashell;  
   }
 }
@@ -72,10 +72,12 @@ h1 {
   text-decoration: rgb(228, 177, 67) wavy underline;
   margin-block-start: 0;
   margin-block-end: 0;
+  line-height: 6rem;
 }
 
 h2 {
   font-size: 2rem;
+  line-height: 2.5rem;
   padding: .5rem;
 }
 
@@ -107,6 +109,10 @@ h4 {
 
 li {
   list-style-type: square;
+}
+
+.noListStyle li {
+  list-style-type: none;
 }
 /* 
 .tab-container {
