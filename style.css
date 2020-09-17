@@ -1,9 +1,37 @@
-:Root {
-  font-size: 32px;
+@media (min-width: 650px) {
+  :Root {
+    font-size: 17px;
+    color: seashell;  
+  }
+}
+
+@media (max-width: 650px) {
+  :Root {
+    font-size: 12px;
+    color: seashell;  
+  }
+}
+
+@media (max-width: 800px) {
+  .tab-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly ;
+  } 
+}
+
+@media (min-width: 800px) {
+  .tab-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly ;
+  } 
 }
 
 html {
   height: 100%;
+  min-width: 350px;
+  padding: 5rem 5rem;
   background-color: #300808;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -15,15 +43,53 @@ header {
   display: flex;
   align-items: center;
   flex-flow: column wrap;
-  color: seashell;
-  font-family: 'Long Cang', cursive;
+  overflow: hidden;
+}
+
+.selectedTab {
   text-decoration: rgb(228, 177, 67) wavy underline;
 }
 
+#main-heading {
+  padding: 3rem;
+}
+
+.tabHeader:hover {
+  background-color: rgba(107, 33, 28, .95);
+}
+
+.tabHeader {
+  padding: 0 2rem;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Long Cang', cursive;
+  font-size: 5rem;
+  text-decoration: rgb(228, 177, 67) wavy underline;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: .5rem;
+}
+
+h2, li {
+  font-family: 'Architects Daughter', cursive;
+  white-space: nowrap;
+}
+
+
 #main-image {
   border-radius: 10px;
-  width: 639px;
-  height: 270px;
+  width: 37rem;
+  height: 16rem;
+  margin: 0 0 2rem 0;
 }
 
 h4 {
@@ -34,3 +100,17 @@ h4 {
   font-family: Consolas, 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-style: italic;
 }
+
+.appDiv {
+  font-size: 1rem;
+}
+
+li {
+  list-style-type: square;
+}
+/* 
+.tab-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly ;
+}  */
