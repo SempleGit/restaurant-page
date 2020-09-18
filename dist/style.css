@@ -36,7 +36,7 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-image: linear-gradient(350deg, rgba(116, 103, 34, 0.75), rgba(107, 33, 28, .95)), url("images/bg.jpg")
+  background-image: linear-gradient(350deg, rgba(116, 103, 34, 0.05), rgba(235, 96, 86, 0.1)), url("images/restaurant.jpeg")
 }
 
 header { 
@@ -55,7 +55,8 @@ header {
 }
 
 .tabHeader:hover {
-  background-color: rgba(107, 33, 28, .95);
+  border-radius: 10px;
+  background-color: rgba(107, 33, 28, .75);
 }
 
 .tabHeader {
@@ -68,6 +69,7 @@ h1, h2 {
 
 h1 {
   font-family: 'Long Cang', cursive;
+  font-weight: 300;
   font-size: 5rem;
   text-decoration: rgb(228, 177, 67) wavy underline;
   margin-block-start: 0;
@@ -88,10 +90,11 @@ h2, li {
 
 
 #main-image {
-  border-radius: 10px;
+  border-radius: 100%;
   width: 37rem;
   height: 16rem;
   margin: 0 0 2rem 0;
+  opacity: 65%;
 }
 
 h4 {
