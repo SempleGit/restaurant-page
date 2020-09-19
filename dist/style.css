@@ -119,6 +119,11 @@ li {
 .noListStyle li {
   list-style-type: none;
 }
+
+.noListStyle {
+  padding-inline-start: 25px;
+}
+
 /* 
 .tab-container {
   display: flex;
